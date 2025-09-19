@@ -2,6 +2,143 @@
   "objects": [],
   "web_service_endpoints": [
     {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos",
+      "alias": "app_infos"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}",
+      "alias": "app_info"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/apps/{id}/appInfos",
+      "alias": "app_app_infos"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/app",
+      "alias": "app_info_app"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/relationships/app",
+      "alias": "app_info_relationships_app"
+    },
+    {
+      "http_method": "patch",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}",
+      "http_body_type": "Requests::V1::AppInfo::Update",
+      "alias": "update_app_info"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/ageRatingDeclaration",
+      "alias": "app_info_age_rating_declaration"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/relationships/ageRatingDeclaration",
+      "alias": "app_info_relationships_age_rating_declaration"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/primaryCategory",
+      "alias": "app_info_primary_category"
+    },
+    {
+      "http_method": "patch",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/relationships/primaryCategory",
+      "http_body_type": "Requests::V1::AppInfo::PrimaryCategory::Update",
+      "alias": "update_app_info_primary_category"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/relationships/primaryCategory",
+      "alias": "app_info_relationships_primary_category"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/secondaryCategory",
+      "alias": "app_info_secondary_category"
+    },
+    {
+      "http_method": "patch",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/relationships/secondaryCategory",
+      "http_body_type": "Requests::V1::AppInfo::SecondaryCategory::Update",
+      "alias": "update_app_info_secondary_category"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/relationships/secondaryCategory",
+      "alias": "app_info_relationships_secondary_category"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/primarySubcategoryOne",
+      "alias": "app_info_primary_subcategory_one"
+    },
+    {
+      "http_method": "patch",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/relationships/primarySubcategoryOne",
+      "http_body_type": "Requests::V1::AppInfo::PrimarySubcategoryOne::Update",
+      "alias": "update_app_info_primary_subcategory_one"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/relationships/primarySubcategoryOne",
+      "alias": "app_info_relationships_primary_subcategory_one"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/primarySubcategoryTwo",
+      "alias": "app_info_primary_subcategory_two"
+    },
+    {
+      "http_method": "patch",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/relationships/primarySubcategoryTwo",
+      "http_body_type": "Requests::V1::AppInfo::PrimarySubcategoryTwo::Update",
+      "alias": "update_app_info_primary_subcategory_two"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/relationships/primarySubcategoryTwo",
+      "alias": "app_info_relationships_primary_subcategory_two"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/secondarySubcategoryOne",
+      "alias": "app_info_secondary_subcategory_one"
+    },
+    {
+      "http_method": "patch",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/relationships/secondarySubcategoryOne",
+      "http_body_type": "Requests::V1::AppInfo::SecondarySubcategoryOne::Update",
+      "alias": "update_app_info_secondary_subcategory_one"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/relationships/secondarySubcategoryOne",
+      "alias": "app_info_relationships_secondary_subcategory_one"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/secondarySubcategoryTwo",
+      "alias": "app_info_secondary_subcategory_two"
+    },
+    {
+      "http_method": "patch",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/relationships/secondarySubcategoryTwo",
+      "http_body_type": "Requests::V1::AppInfo::SecondarySubcategoryTwo::Update",
+      "alias": "update_app_info_secondary_subcategory_two"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/relationships/secondarySubcategoryTwo",
+      "alias": "app_info_relationships_secondary_subcategory_two"
+    },
+    {
       "http_method": "delete",
       "url": "https://api.appstoreconnect.apple.com/v1/users/{id}",
       "alias": "delete_user"
