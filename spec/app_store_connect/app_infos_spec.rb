@@ -162,7 +162,7 @@ RSpec.describe AppStoreConnect::Client do
 
     it_behaves_like :get_request, path: 'appInfos/1234/relationships/secondarySubcategoryTwo'
   end
-end
+
   describe '#update_app_info' do
     let(:id) { '1234' }
 
@@ -232,4 +232,4 @@ end
 
     it_behaves_like :patch_request, path: 'appInfos/1234/relationships/secondarySubcategoryTwo'
   end
-
+end
