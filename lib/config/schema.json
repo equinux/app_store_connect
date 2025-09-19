@@ -1097,6 +1097,99 @@
       "url": "https://api.appstoreconnect.apple.com/v1/reviewSubmissions/{id}/items",
       "http_method": "get",
       "alias": "review_submissions_items"
+    },
+
+    
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets",
+      "alias": "app_screenshot_sets"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/{id}",
+      "alias": "app_screenshot_set"
+    },
+    {
+      "http_method": "post",
+      "url": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets",
+      "http_body_type": "Requests::V1::AppScreenshotSet::Create",
+      "alias": "create_app_screenshot_set"
+    },
+    {
+      "http_method": "delete",
+      "url": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/{id}",
+      "alias": "delete_app_screenshot_set"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/{id}/appScreenshotSets",
+      "alias": "app_store_version_localization_app_screenshot_sets"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/{id}/appStoreVersionLocalization",
+      "alias": "app_screenshot_set_app_store_version_localization"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/{id}/relationships/appStoreVersionLocalization",
+      "alias": "app_screenshot_set_relationships_app_store_version_localization"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/{id}/appScreenshots",
+      "alias": "app_screenshot_set_app_screenshots"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/{id}/relationships/appScreenshots",
+      "alias": "app_screenshot_set_relationships_app_screenshots"
+    },
+    {
+      "http_method": "delete",
+      "url": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/{id}/relationships/appScreenshots",
+      "http_body_type": "Requests::V1::AppScreenshotSetAppScreenshots::Delete",
+      "alias": "delete_app_screenshot_set_app_screenshots"
+    },
+
+    
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appScreenshots",
+      "alias": "app_screenshots"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appScreenshots/{id}",
+      "alias": "app_screenshot"
+    },
+    {
+      "http_method": "post",
+      "url": "https://api.appstoreconnect.apple.com/v1/appScreenshots",
+      "http_body_type": "Requests::V1::AppScreenshot::Create",
+      "alias": "create_app_screenshot"
+    },
+    {
+      "http_method": "patch",
+      "url": "https://api.appstoreconnect.apple.com/v1/appScreenshots/{id}",
+      "http_body_type": "Requests::V1::AppScreenshot::Update",
+      "alias": "update_app_screenshot"
+    },
+    {
+      "http_method": "delete",
+      "url": "https://api.appstoreconnect.apple.com/v1/appScreenshots/{id}",
+      "alias": "delete_app_screenshot"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appScreenshots/{id}/appScreenshotSet",
+      "alias": "app_screenshot_app_screenshot_set"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appScreenshots/{id}/relationships/appScreenshotSet",
+      "alias": "app_screenshot_relationships_app_screenshot_set"
     }
   ],
   "types": [
