@@ -8,6 +8,44 @@
     },
 
     {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfoLocalizations/{id}",
+      "alias": "app_info_localization"
+    },
+    {
+      "http_method": "post",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfoLocalizations",
+      "http_body_type": "Requests::V1::AppInfoLocalization::Create",
+      "alias": "create_app_info_localization"
+    },
+    {
+      "http_method": "patch",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfoLocalizations/{id}",
+      "http_body_type": "Requests::V1::AppInfoLocalization::Update",
+      "alias": "update_app_info_localization"
+    },
+    {
+      "http_method": "delete",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfoLocalizations/{id}",
+      "alias": "delete_app_info_localization"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfos/{id}/appInfoLocalizations",
+      "alias": "app_info_app_info_localizations"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfoLocalizations/{id}/appInfo",
+      "alias": "app_info_localization_app_info"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/appInfoLocalizations/{id}/relationships/appInfo",
+      "alias": "app_info_localization_relationships_app_info"
+    },
+
+    {
       "http_method": "delete",
       "url": "https://api.appstoreconnect.apple.com/v1/bundleIdCapabilities/{id}",
       "alias": "delete_bundle_id_capability"
